@@ -1,9 +1,9 @@
 public class RemoveSpaces {
 
     public String removeSpaces(String str){
-        String newString = str.trim();
+        String newStr = str.trim();
         if (!str.isEmpty()){
-            if (str.equals(newString)){
+            if (str.equals(newStr)){
 
                 return "Пробелов не было";
             }

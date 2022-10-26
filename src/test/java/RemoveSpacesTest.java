@@ -19,7 +19,7 @@ public class RemoveSpacesTest {
         Assert.assertEquals(actualResult, expectedResult);
     }
 
-    /*if (string.equals(string.replace("   ", "   ")
+    /*if (string.equals(string.trim())
      */
     @Test
     public void testStringEqualsNewString(){
