@@ -22,7 +22,7 @@ public class RemoveSpacesTest {
     /*if (string.equals(string.trim())
      */
     @Test
-    public void testStringEqualsNewString(){
+    public void testStringEqualsNewString_HappyPath(){
         //AAA
         //arrange
         String string = "    Red Rover School   ";
