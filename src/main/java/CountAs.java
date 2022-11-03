@@ -9,19 +9,23 @@ public class CountAs {
     public String countAs(String str){
         int countA = 0;
         int l= str.length();
-        if (!str.isEmpty()){
-            str = str.toLowerCase();
-            for (int i = 0; i < str.length(); i++){
-                if (str.charAt(i)== 'a'){
-                    countA++;
+        if (str != null){
+            if (!str.isEmpty()){
+                str = str.toLowerCase();
+                for (int i = 0; i < str.length(); i++){
+                    if (str.charAt(i)== 'a'){
+                        countA++;
+                    }
+
                 }
+                int countRemainder= l - countA;
+
+                return "".concat(String.valueOf(countA)).concat(",").concat(String.valueOf(countRemainder));
 
             }
-            int countRemainder= l - countA;
-
-            return "" + countA + "," + countRemainder;
 
         }
+
 
         return "String is Empty";
 
